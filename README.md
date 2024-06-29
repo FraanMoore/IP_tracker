@@ -17,11 +17,11 @@ Note: The use of sort in `request_handled()` would be `O(T*logT)`, but how `T` i
 
 It updates the top 100 IPs, when a new IP request enters.
 
-If the IP already exists on the `IpCount`, it adds to the count dictionary , if not, it creates a new entry
+If the IP already exists on the `IPCount`, it adds to the count dictionary , if not, it creates a new entry
 
 In the list, if the IP is not already on the `top100list`, it's added to it and then the list is organized decreasingly based on the `IPCount`.
 
-After the list is organized it is stripped of any Ip above 100. Showing the 100 IP that are the most repeated.
+After the list is organized it is stripped of any IP above 100. Showing the 100 IP that are the most repeated.
 
 Finally, `clear()`, clear the list (`top100list`) and the count dictionary (`IPCount`).
 
